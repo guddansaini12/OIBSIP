@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root 
+{
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0.1);
+
+}
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html 
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body
+{
+    background: rgb(251 245 229);
+}
+
+.header {
+    border: 0px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    color: #f9b479;
+}
+
+.header a {
+    color: var(--light-color);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.header .navbar a:hover {
+    color: #ffc42d;
+}
+
+.header #sign_in {
+    font-size: 1.7rem;
+    padding: 0 0 0 42rem;
+    text-align: center;
+}
+
+.header #sign_in:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #ffc42d;
+}
+
+.header button {
+    border: 1px solid;
+    background-color: yellow;
+    border-radius: .5rem;
+    padding: .7rem;
+}
+
+.header button:hover {
+    cursor: pointer;
+    background-color: coral;
+    color: #fff;
+}
+
+.about .content img {
+    float: right;
+    padding: 5rem 4rem 2rem 1rem;
+    background-color: #eee;
+}
+
+.about .content h1 {
+    text-align: left;
+    padding: 10rem 1rem 0 3rem;
+    font-size: 3.7rem;
+    line-height: 4.5rem;
+    text-transform: initial;
+    color: rgb(63 63 61);
+}
+
+.about .content p {
+    text-align: left;
+    padding: 1rem 1rem 0 3rem;
+    font-size: 1.2rem;
+    color: rgb(63 63 61);
+    line-height: 2.7rem;
+}
+
+.about .content div {
+    text-align: left;
+    padding: 1rem 1rem 0 4rem;
+}
+
+.about .content div a {
+    border: 2px solid;
+    background-color: #4a4cc7;
+    border-radius: .9rem;
+    padding: 1.2rem 2rem;
+    color: #eee;
+}
+
+.about .content div a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: indianred;
+}
+
+.about .content div span {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.courses {
+    padding: 15rem 50rem;
+}
+
+.courses .heading h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fcb89f;
+}
+
+.courses .heading h1 {
+    text-align: center;
+    font-size: 4rem;
+    white-space: nowrap;
+    text-indent: -60px;
+    color: #3e3e3e;
+}
+
+.courses .heading a{
+    color: #5f5f5f;
+    font-size: 1.9rem;
+    border: 2px solid black;
+    word-wrap: break-word;
+    margin: 1rem 2rem;
+    padding: -10px;
+    white-space: nowrap;
+    text-indent: -60px;
+}
+
+.blog {
+    padding: -10rem 10rem;
+}
+
+.blog .blogs h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #f8a177;
+}
+
+.blog .blogs h1 {
+    text-align: center;
+    font-size: 4rem;
+    white-space: nowrap;
+    text-indent: -5px;
+    color: #3e3e3e;
+}
+
+.blog .blogs a {
+    text-align: center;
+    color: #5f5f5f;
+    font-size: 1.9rem;
+    border: 2px solid black;
+    word-wrap: break-word;
+    margin: 50rem;
+    padding: -10px;
+    white-space: nowrap;
+    text-indent: -60px;
+}
+
+
+.reviews .review-slider
+{
+    border: 0px solid;
+    padding: 1rem;
+}
+
+.reviews .heading {
+    border: 0px solid black;
+    padding-top: 10rem;
+    /* padding-left: 70rem; */
+    text-align: center;
+    font-size: 3rem;
+}
+
+.reviews .review-slider .box
+{
+    border: 0px solid red;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.reviews .review-slider .box:hover
+{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.reviews .review-slider .box img
+{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.reviews .review-slider .box p
+{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 1.8;
+}
+
+.reviews .review-slider .box h3
+{
+    padding-bottom: .5rem;
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.reviews .review-slider .box .stars i
+{
+    color: orange;
+    font-size: 1.7rem;
+}
+
+
+.instructor
+{
+    background: #fff;
+}
+
+.instructor .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.instructor .box-container .box h3
+{
+    font-size: 2.5rem;
+    color: var(--black);  
+    padding: 1rem 0;  
+}
+
+.instructor .box-container .box h3 i
+{
+    color: #f9b479;
+}
+
+.instructor .box-container .box .links
+{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.instructor .box-container .box .links i
+{
+    color: goldenrod;
+    padding-right: .5rem;
+}
+
+.instructor .box-container .box .links:hover i
+{
+    padding-right: 2rem;
+}
+
+
+.instructor .box-container .box p
+{
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.instructor .box-container .box .share a
+{
+    border: 0px solid;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.instructor .box-container .box .share a:hover
+{
+    background: black;
+    color: #fff;
+}
+
+.instructor .box-container .box .email
+{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.instructor .box-container .box .btn
+{
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.instructor .box-container .box .btn:hover {
+    background: coral;
+}
+
+
+.instructor .credit
+{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    color: var(--black);
+    border-top: var(--border);
+}
+
+.instructor .credit span
+{
+    color: crimson;
+    text-decoration: underline;
+}
